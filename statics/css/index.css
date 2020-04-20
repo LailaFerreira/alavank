@@ -75,7 +75,7 @@ html, body{
 		height: 100%;
 		width: 100%;
 		position: relative;
-		background: #333 url('../images/bgn.jpg') no-repeat 0 0;
+		background: #333 url('../images/bgn.png') no-repeat 0 0;
 		background-attachment: fixed;
 		background-size: cover;
 	}
