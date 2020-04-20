@@ -1640,7 +1640,7 @@ html, body{
 	  display: inline-flex;
 	  height: 40px;
 	  width: 197px;
-	  border: 2px solid #f28500;
+	  border: 2px solid #efb26b;
 	  margin: 20px 20px 20px 20px;
 	  color: #969696;
 	  text-transform: uppercase;
@@ -1676,7 +1676,7 @@ html, body{
 	  height: 250%;
 	  left: -200px;
 	  top: -30px;
-	  background: #f28500;;
+	  background: #efb26b;;
 	  position: absolute;
 	  transition: all .3s ease-Out;
 	}
