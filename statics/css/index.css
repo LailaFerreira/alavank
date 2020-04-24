@@ -521,16 +521,17 @@ html, body{
 
 	#about{
 		width: 100%;
-	    padding-top: 6%;
+	    padding-top:3%;
 	    height: auto;
-	    padding-bottom: 6%;
 	    background: url('../images/mao-contact-bg.jpg') fixed no-repeat 50% 50%;
 	    background-color: white;
 	    color: #010507;
 	    position: relative;
 	}
 
-	
+	#about span{
+		font-weight: bold;
+	}
 
 	.welcome{
 		color: rgb(255, 255, 255);
@@ -600,8 +601,9 @@ html, body{
 	    color: #3a3737;
 	    font-family: Roboto, sans-serif;
 /*	    BACKGROUND COM PATTERN*/
-	    background-image: url(../images/texture6.png);
- 		background-repeat:repeat;
+	    background-image: url(../images/bg2.jpeg);
+ 		background-repeat:no-repeat;
+ 		background-size: cover;
 
 	}
 
@@ -616,17 +618,18 @@ html, body{
 	    font-family: Roboto, sans-serif;
 	}
 
-	.left-desc{
+	.left-desc1{
         font-size: 27px;
 	    font-size: 22px;
 	    line-height: normal;
 	    font-weight: 300;
 	    padding: 4% 2% 4% 11%;
 	    text-align: left !important;
-	    color: #3a3737;
+	    color: #efe1e1;
 	    font-family: Roboto, sans-serif;
-	    background-image: url(../images/texture5.png);
- 		background-repeat:repeat;
+	    background-image: url(../images/bg1.jpeg);
+ 		background-repeat: no-repeat;
+    	background-size: cover;
 	}
 
 	.cursive-font{
@@ -1723,15 +1726,16 @@ html, body{
 	color: #CC9F28;
 }
 
-.span-spotlight-red{
+.span-spotlight-white{
 	font-weight: bold;
-	color: #720909;
+	color: white;
 }
 
 .gerenciamento-title{
 	text-transform: uppercase;
 	font-weight: 900;
 	font-size: 27px;
+	color: #efe1e1;
 }
 
 .floating-image{
@@ -1779,7 +1783,7 @@ html, body{
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: 1px 1px #cacaca;
-    color: rgb(244, 174, 39);
+    color: #efe1e1;
  }
 
 /*GRID*/
@@ -1840,7 +1844,7 @@ html, body{
 	#advisory-wrapper > div > p {
 		width: 70%;
 		margin: 0 auto;
-		text-align: justify;
+		text-align: center;
 		line-height: 24px;
 		margin-bottom: 30px;
 		color: gray;

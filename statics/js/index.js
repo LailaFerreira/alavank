@@ -1,11 +1,11 @@
 $(document).ready(function() {
 		$('.thing').slick({
-			dots: true,
+			dots: false,
 			arrows: false,
 			autoplay: true,
 			vertical: true,
         	centerMode: true,
-			autoplaySpeed: 1000,
+			autoplaySpeed: 800,
 			infinite: true
 		})
 	});
