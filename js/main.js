@@ -187,5 +187,31 @@
   });
 
 
+function touchScrollElement(element){
+    if(isTouchDevice()){
+        var scrollStartPosY=0;
+        var scrollStartPosX=0;
+
+        element.addEventListener("touchstart", function(event) {
+            scrollStartPosY=this.scrollTop+event.touches[0].pageY;
+            scrollStartPosX=this.scrollLeft+event.touches[0].pageX;
+        },false);
+
+        element.addEventListener("touchmove", function(event) {
+            if ((this.scrollTop < this.scrollHeight-this.offsetHeight &&
+                this.scrollTop+event.touches[0].pageY < scrollStartPosY-5) ||
+            (this.scrollTop != 0 && this.scrollTop+event.touches[0].pageY > scrollStartPosY+5))
+                event.preventDefault();
+            if ((this.scrollLeft < this.scrollWidth-this.offsetWidth &&
+                this.scrollLeft+event.touches[0].pageX < scrollStartPosX-5) ||
+            (this.scrollLeft != 0 && this.scrollLeft+event.touches[0].pageX > scrollStartPosX+5))
+                event.preventDefault();
+            this.scrollTop=scrollStartPosY-event.touches[0].pageY;
+            this.scrollLeft=scrollStartPosX-event.touches[0].pageX;
+        },false);
+    }
+}
+
+
 
 })(jQuery);
